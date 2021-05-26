@@ -1,1 +1,24 @@
-
+{
+      "name": "Kompanion",
+      "description": "Userbot",
+      "keywords": [ "userbot"],   
+      "repository": "https://github.com/ninja7-bot/Kompanion/",
+ 
+   "env": {
+      "SESSION": {
+         "description": "Session.",
+         "required": false,
+         "value": ""
+      },
+      "API_ID": {
+         "description": "Get API_ID from my.telegram.org, used for telethon based modules.",
+         "required": true,
+         "value": ""
+      },
+      "API_HASH": {
+         "description": "Get API_HASH from my.telegram.org, used for telethon based modules.",
+         "required": true,
+         "value": ""
+      }
+   }
+}
