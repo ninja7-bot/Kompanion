@@ -7,14 +7,18 @@ import logging
 logging.basicConfig(format='[%(levelname) 5s/%(asctime)s] %(name)s: %(message)s',
                     level=logging.INFO)
 
-from configparser import ConfigParser
+#rom configparser import ConfigParser
 
-parser = ConfigParser()
-parser.read("config.ini")
-general = parser["general"]
+#arser = ConfigParser()
+#arser.read("config.ini")
+#eneral = parser["general"]
+
+API_ID = os.environ.get('API_ID')
+API_HASH = os.environ.get('API_HASH')
+SESSION = os.environ.get("SESSION")
     
-SESSION = general.get("SESSION")
-APP_ID = general.get("APP_ID")
-API_HASH = general.get("API_HASH")
+#SESSION = general.get("SESSION")
+#PP_ID = general.get("APP_ID")
+#PI_HASH = general.get("API_HASH")
     
 Kompanion = TelegramClient(StringSession(SESSION), APP_ID, API_HASH)
