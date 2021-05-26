@@ -21,4 +21,4 @@ SESSION = os.environ.get("SESSION")
 #PP_ID = general.get("APP_ID")
 #PI_HASH = general.get("API_HASH")
     
-Kompanion = TelegramClient(StringSession(SESSION), APP_ID, API_HASH)
+Kompanion = TelegramClient(StringSession(SESSION), API_ID, API_HASH)
