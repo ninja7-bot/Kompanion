@@ -8,7 +8,7 @@ from TheKompanion import Kompanion
 
 zws = '\u200b'
 
-@Kompanion.on(events.NewMessage(outgoing=True, pattern=r'\.my?a(?:nime)?l(?:ist)? a(?:nime)? (.+)'))
+@Kompanion.on(events.NewMessage(outgoing=True, pattern=r'\.my?a?l? a? (.+)'))
 async def mal_anime(e):
     await e.edit('Searching...')
     await e.delete()
