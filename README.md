@@ -3,7 +3,7 @@
 Just another telethon userbot
 
 *Credits*
-- me (lol)
+- [Dank Del](https://github.com/Dank-del)
 - [DragSama](https://github.com/Dragsama) 
 - [BlankX](https://github.com/the-blank-x) 
 - [Shrimadhav](https://github.com/Spechide)
