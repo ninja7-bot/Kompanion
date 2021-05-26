@@ -37,7 +37,7 @@ async def mal_anime(e):
     text = text + url
     await e.reply(text, file=pic, link_preview=False, parse_mode='html')
 
-@Kompanion.on(events.NewMessage(outgoing=True, pattern=r'\.my?a(?:nime)?l(?:ist)? m(?:anga)? (.+)'))
+@Kompanion.on(events.NewMessage(outgoing=True, pattern=r'\.my?a?l? m? (.+)'))
 async def mal_manga(e):
     await e.edit('Searching...')
     await e.delete()
@@ -68,7 +68,7 @@ async def mal_manga(e):
     text = text + url
     await e.reply(text, file=pic, link_preview=False, parse_mode='html')
 
-@Kompanion.on(events.NewMessage(outgoing=True, pattern=r'\.my?a(?:nime)?l(?:ist)? c(?:haracter)? (.+)'))
+@Kompanion.on(events.NewMessage(outgoing=True, pattern=r'\.my?a?l? c? (.+)'))
 async def mal_character(e):
     await e.edit('Searching...')
     await e.delete()
@@ -97,8 +97,8 @@ async def mal_character(e):
 async def help(event):
     msg = """
         **Kompanion. Weeb mod**
-        `.myanimelist anime <<anime name>>` -> search anime.
-        `.myanimelist character <<character name>>` -> search character.
-        `.myanimelist manga <<manga name>>` -> search manga.
+        `.mal a <<anime name>>` -> search anime.
+        `.mal c <<character name>>` -> search character.
+        `.mal m <<manga name>>` -> search manga.
     """
     await event.edit(msg)
